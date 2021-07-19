@@ -1,3 +1,47 @@
 a {
     display: block;
 }
+
+.card-img-top.img-fluid{
+  display: block;
+  height: 200px;
+}
+
+.jumbotron.text-center {
+  font-weight: bold;
+  background: url(https://junnot.info/wp-content/uploads/2018/01/ribka84-e1516025801490.png),
+              url(https://junnot.info/wp-content/uploads/2018/01/undear-e1516026008714.jpg)
+              no-repeat center center fixed;
+  background-size: auto,cover;
+  animation: bgAnim 200s linear infinite;
+}
+
+@keyframes bgAnim {
+  from {
+    background-position: 0px 0%, center center;
+  }
+  to {
+    background-position: -10024px 0%, center center;
+  }
+}
+
+.display-4,
+.lead,
+ #text {
+    font-weight: bold;
+    background-color: red;
+
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg,  #21eb12, #ffffff);
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
