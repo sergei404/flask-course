@@ -26,5 +26,5 @@ def render_tour(id):
     return render_template('tour.html', title=data.title, departures=data.departures, tour=data.tours[id], stars_length=stars_length)
 
 
-if __name__ == "__main__":
-    app.run(debug=True)
+if __name__ == '__main__':
+    app.run()
